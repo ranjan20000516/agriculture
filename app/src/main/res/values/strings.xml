@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">agriculture</string>
+    <string name="user_id_email">user Id/Email</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+
+
+    <string-array name="info">
+        <item>Introduction</item>
+        <item>crop production</item>
+        <item>varieties</item>
+        <item>Pest Management</item>
+        <item>Disease Management</item>
+        <item>Harvest</item>
+        <item>Post Harvest</item>
+        <item>Contact us</item>
+    </string-array>
+</resources>
