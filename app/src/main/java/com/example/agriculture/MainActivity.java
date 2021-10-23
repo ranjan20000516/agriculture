@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.agriculture.utils.CSVImporter;
 
 public class MainActivity extends AppCompatActivity {
 
     Button button;
+    TextView signUpButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent1);
             finish();
         });
+
+       signUpButton=findViewById(R.id.signUp);
+       signUpButton.setOnClickListener(v -> {
+         Intent registerIntent=new Intent(MainActivity.this, RegisterActivity.class);
+         startActivity(registerIntent);
+         finish();
+        });
+
 
     }
 }
