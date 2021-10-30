@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsActivity">
+    <LinearLayout
+        android:visibility="visible"
+        android:paddingHorizontal="12dp"
+        android:orientation="vertical"
+        android:id="@+id/contactUs"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/indian_agricultural_research_institute_logo"
+            android:layout_width="160dp"
+            android:layout_height="160dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:text="Email : "
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_gravity="center"
+
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="skush02@gmail.com"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:text="Address : "
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_gravity="center"
+
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="ICAR-Indian Agricultural Statistics Research Institute,New Delhi- 110012 , India"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:text="Guide : "
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_gravity="center"
+
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Dr. Sangeeta Ahuja \n Scientist (Computer Applications) IASRI-IARI "
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

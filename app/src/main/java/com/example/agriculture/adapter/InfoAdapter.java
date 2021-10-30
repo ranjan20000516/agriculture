@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.agriculture.ContactUsActivity;
 import com.example.agriculture.R;
 import com.example.agriculture.Screen3;
 import com.example.agriculture.Screen_2;
@@ -44,12 +45,21 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.infoViewHolder
        holder.itemView.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent intent3=new Intent(context, Screen_4.class);
-               intent3.putExtra("id", data.get(position).get_id());
-               intent3.putExtra("content",data.get(position).getData());
-               intent3.putExtra("name",data.get(position).getName());
-               context.startActivity(intent3);
+               if (data.get(position).getName().equalsIgnoreCase("contact us")) {
+                   context.startActivity(new Intent(context, ContactUsActivity.class));
+                   return;
+               }
+               Intent intent3;
+               if (data.get(position).getType().equals("list")) {
+                   intent3 = new Intent(context, Screen3.class);
+               } else {
+                   intent3 = new Intent(context, Screen_4.class);
+               }
 
+               intent3.putExtra("id", data.get(position).get_id());
+               intent3.putExtra("content", data.get(position).getData());
+               intent3.putExtra("name", data.get(position).getName());
+               context.startActivity(intent3);
            }
        });
     }
