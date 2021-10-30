@@ -8,7 +8,7 @@
     android:layout_height="match_parent">
     <ImageView
         android:scaleType="centerCrop"
-        android:src="@drawable/grapes"
+        android:src="@drawable/_5_kg_fresh_orange_500x500"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="Subtropical Grapes"
+            android:text="Kinnow Cultivation"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -55,7 +55,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/roboto_medium"
             android:padding="10dp"
-            android:text="iasri agriculture statistics research -new delhi"
+            android:text="iasri Indian agriculture statistics research Institute - new delhi"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/black"
