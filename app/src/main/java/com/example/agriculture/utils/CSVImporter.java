@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.example.agriculture.DatabaseHandler;
 import com.example.agriculture.models.AppModel;
+import com.example.agriculture.models.UserModel;
 import com.opencsv.CSVReader;
 
 import java.io.IOException;
@@ -25,6 +26,19 @@ public class CSVImporter {
 
         importAppModels();
 
+
+    }
+    public void importUserModels() {
+        // step 1
+        // get the objects
+        ArrayList<UserModel> userModelArrayList = getUserModels();
+
+        // step 2
+        // Call SQL query and add them to db
+        for (UserModel model: userModelArrayList) {
+            handler.addUser(model);
+        }
+
     }
 
     public void importAppModels() {
@@ -40,6 +54,26 @@ public class CSVImporter {
 
     }
 
+
+    public ArrayList<UserModel> getUserModels() {
+        ArrayList<UserModel> models = new ArrayList<>();
+        try {
+            CSVReader reader = new CSVReader(new InputStreamReader(context.getAssets().open("users.csv")));
+            String[] nextLine;
+            // skipping the first line as its header
+            reader.skip(1);
+            while ((nextLine = reader.readNext()) != null) {
+                // nextLine[] is an array of values from the line
+                UserModel model = new UserModel((nextLine[0]),nextLine[1],nextLine[2] );
+                models.add(model);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return models;
+
+
+    }
     public ArrayList<AppModel> getStateModels() {
         ArrayList<AppModel> models = new ArrayList<>();
         try {
