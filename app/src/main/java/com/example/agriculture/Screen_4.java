@@ -49,10 +49,10 @@ public class Screen_4 extends AppCompatActivity {
 
     public void inflateData(String content) {
         try {
-            String[] arr = content.split("\n");
+            String[] arr = content.split("qq");
             for (String elem : arr) {
                 if(elem.length()<2) return;
-                Log.e("Db contents", elem);
+//                Log.e("Db contents", elem);
                 layout.addView(getView(elem));
             }
         } catch (Exception e) {
@@ -74,12 +74,14 @@ public class Screen_4 extends AppCompatActivity {
             textView.setTypeface(null, Typeface.BOLD);
             return textView;
         } else if (type.equals("#I")) {
-            InputStream image = getAssets().open("grapes.jpeg");
-//            InputStream image = getAssets().open(content.substring(2));
+//            InputStream image = getAssets().open("grapes.jpeg");
+            Log.e("image", content.substring(2));
+            InputStream image = getAssets().open(content.substring(2));
             Drawable d = Drawable.createFromStream(image, null);
             ImageView imageView = new ImageView(this);
             imageView.setImageDrawable(d);
             imageView.setPadding(0,30,0,30);
+            imageView.setMinimumHeight(400);
             return imageView;
         } else {
             TextView textView = new TextView(this);
