@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.agriculture.ContactUsActivity;
+import com.example.agriculture.FormulationActivity;
 import com.example.agriculture.R;
 import com.example.agriculture.Screen3;
 import com.example.agriculture.Screen_2;
@@ -47,6 +48,10 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.infoViewHolder
            public void onClick(View v) {
                if (data.get(position).getName().equalsIgnoreCase("contact us")) {
                    context.startActivity(new Intent(context, ContactUsActivity.class));
+                   return;
+               }
+               if(data.get(position).getName().equalsIgnoreCase("Formulation of Kinnow")){
+                   context.startActivity(new Intent(context, FormulationActivity.class));
                    return;
                }
                Intent intent3;
