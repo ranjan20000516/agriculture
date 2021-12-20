@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ImageSpan;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -83,6 +87,22 @@ public class Screen_4 extends AppCompatActivity {
             imageView.setPadding(0,30,0,30);
             imageView.setMinimumHeight(content.contains("table")?700: 400);
             return imageView;
+        }  else if(type.equals("• ")) {
+            TextView textView = new TextView(this);
+
+
+            textView.setTextColor(Color.parseColor("#616161"));
+
+
+
+            textView.setTextSize((16));
+            String msg=" "+content.substring(1);
+            ImageSpan mImageSpan= new ImageSpan(getApplicationContext(), R.drawable.ic_baseline_fiber_manual_record_24);
+            SpannableString text = new SpannableString(msg);
+            text.setSpan(mImageSpan, 0, 1, 0);
+            textView.setText(text);
+
+            return textView;
         } else {
             TextView textView = new TextView(this);
             textView.setText(content);
