@@ -30,7 +30,7 @@ public class Screen3 extends AppCompatActivity {
         dataBaseHandler= new DatabaseHandler(this);
 //        appModelArrayList= dataBaseHandler.getParentModels();
         appModelArrayList = dataBaseHandler.getModelsbyID(id);
-        Objects.requireNonNull(getSupportActionBar()).setTitle(id == 0? "Agriculture": getIntent().getStringExtra("name"));
+        Objects.requireNonNull(getSupportActionBar()).setTitle(id == 0? "Kinnow Cultivation": getIntent().getStringExtra("name"));
         recyclerView=findViewById(R.id.recycle_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter=new InfoAdapter(this,appModelArrayList);

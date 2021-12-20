@@ -81,7 +81,7 @@ public class Screen_4 extends AppCompatActivity {
             ImageView imageView = new ImageView(this);
             imageView.setImageDrawable(d);
             imageView.setPadding(0,30,0,30);
-            imageView.setMinimumHeight(400);
+            imageView.setMinimumHeight(content.contains("table")?700: 400);
             return imageView;
         } else {
             TextView textView = new TextView(this);
