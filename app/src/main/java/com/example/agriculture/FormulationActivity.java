@@ -41,8 +41,7 @@ public class FormulationActivity extends AppCompatActivity {
                 }else{
                     Integer val = Integer.parseInt(area.getText().toString());
                     Integer val2 = Integer.parseInt(spacing.getText().toString());
-
-                    areaAnsET.setText(String.valueOf((int)Math.floor(val/(val2*val2))));
+                    areaAnsET.setText(String.valueOf((int)Math.floor(val/val2)));
                 }
             }
         });
