@@ -139,14 +139,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
      
         SQLiteDatabase db = getWritableDatabase();
         db.execSQL("delete from " + tableName);
-        db.execSQL("delete from " + userTableName);
+
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + tableName);
-        db.execSQL("DROP TABLE IF EXISTS " + userTableName);
+
         onCreate(db);
 
     }
