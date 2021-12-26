@@ -55,7 +55,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/roboto_medium"
             android:padding="10dp"
-            android:text="iasri Indian agriculture statistics research Institute - new delhi"
+            android:text="ICAR - Indian Agricultural Statistics Research Institute - New Delhi, 110012"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/black"
