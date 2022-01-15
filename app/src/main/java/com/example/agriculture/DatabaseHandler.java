@@ -33,7 +33,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         contentValues.put("data" , appModel.getData() );
         Log.i("sqlitxxe",contentValues.toString());
         db.insert(tableName, null, contentValues);
-
     }
     public void addUser (UserModel userModel){
         SQLiteDatabase db = this.getWritableDatabase();
