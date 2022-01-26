@@ -50,7 +50,7 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.infoViewHolder
                    context.startActivity(new Intent(context, ContactUsActivity.class));
                    return;
                }
-               if(data.get(position).getName().equalsIgnoreCase("Formulation of Kinnow")){
+               if(data.get(position).getName().equalsIgnoreCase("Computation of parameters in Kinnow")){
                    context.startActivity(new Intent(context, FormulationActivity.class));
                    return;
                }

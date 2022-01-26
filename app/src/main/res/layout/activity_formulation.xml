@@ -16,6 +16,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_gravity="center"
+            android:drawablePadding="10dp"
             android:drawableLeft="@drawable/ic_baseline_fiber_manual_record_24"
             android:text="Calculation of plant population of kinnow"
             android:layout_width="match_parent"
@@ -124,6 +125,7 @@
             android:paddingLeft="8dp"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:drawablePadding="10dp"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/ic_baseline_fiber_manual_record_24"
             android:text="Calculation of initial fruit set percentage"
@@ -216,6 +218,7 @@
             android:textStyle="bold"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/ic_baseline_fiber_manual_record_24"
+            android:drawablePadding="10dp"
             android:text="Calculation of yield per plant"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
