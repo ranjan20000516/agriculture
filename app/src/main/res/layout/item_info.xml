@@ -5,6 +5,7 @@
     android:layout_margin="10dp"
     android:padding="30dp"
     app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="@color/light_green"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,7 +21,7 @@
         android:padding="18dp"
         android:text="text 1"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

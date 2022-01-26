@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_green"
     tools:context=".FormulationActivity">
     <LinearLayout
         android:paddingTop="20dp"
@@ -12,23 +13,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:layout_marginTop="20dp"
            android:paddingLeft="8dp"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:drawablePadding="10dp"
             android:drawableLeft="@drawable/ic_baseline_fiber_manual_record_24"
-            android:text="Calculation of plant population of kinnow"
+            android:text=" Calculation of plant population of kinnow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <ImageView
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="16dp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:src="@drawable/formula1"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"/>
+<!--        <ImageView-->
+<!--            android:layout_marginHorizontal="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:background="#fff"-->
+<!--            android:elevation="5dp"-->
+<!--            android:src="@drawable/formula1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"/>-->
 
         <LinearLayout
             android:layout_marginHorizontal="16dp"
@@ -122,22 +124,23 @@
 
 
         <TextView
+            android:layout_marginTop="20dp"
             android:paddingLeft="8dp"
             android:textSize="16sp"
             android:textStyle="bold"
             android:drawablePadding="10dp"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/ic_baseline_fiber_manual_record_24"
-            android:text="Calculation of initial fruit set percentage"
+            android:text=" Calculation of initial fruit set percentage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <ImageView
-            android:layout_margin="16dp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:src="@drawable/formula2"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"/>
+<!--        <ImageView-->
+<!--            android:layout_margin="16dp"-->
+<!--            android:background="#fff"-->
+<!--            android:elevation="5dp"-->
+<!--            android:src="@drawable/formula2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"/>-->
         <LinearLayout
             android:layout_marginHorizontal="16dp"
 
@@ -214,30 +217,34 @@
             android:layout_height="wrap_content"/>
         <TextView
             android:paddingLeft="8dp"
+            android:layout_marginTop="20dp"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/ic_baseline_fiber_manual_record_24"
+<<<<<<< HEAD
             android:drawablePadding="10dp"
             android:text="Calculation of yield per plant"
+=======
+            android:text=" Calculation of yield per plant"
+>>>>>>> 71fd5e9bdec1e1b54b8df87df5fc84f1ebd1fb82
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <ImageView
-            android:layout_margin="16dp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:src="@drawable/formula3"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"/>
+<!--        <ImageView-->
+<!--            android:layout_margin="16dp"-->
+<!--            android:background="#fff"-->
+<!--            android:elevation="5dp"-->
+<!--            android:src="@drawable/formula3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"/>-->
         <LinearLayout
             android:layout_marginHorizontal="16dp"
-
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
 
-                android:text="Total number of plants = "
+                android:text="Total no. of fruits per plant = "
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>

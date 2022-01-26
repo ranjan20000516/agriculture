@@ -91,11 +91,11 @@ public class Screen_4 extends AppCompatActivity {
             TextView textView = new TextView(this);
 
 
-            textView.setTextColor(Color.parseColor("#616161"));
+            textView.setTextColor(Color.parseColor("#313131"));
 
 
 
-            textView.setTextSize((16));
+            textView.setTextSize((18));
             String msg=" "+content.substring(1);
             ImageSpan mImageSpan= new ImageSpan(getApplicationContext(), R.drawable.ic_baseline_fiber_manual_record_24);
             SpannableString text = new SpannableString(msg);
@@ -105,6 +105,8 @@ public class Screen_4 extends AppCompatActivity {
             return textView;
         } else {
             TextView textView = new TextView(this);
+            textView.setTextColor(Color.parseColor("#313131"));
+            textView.setTextSize((18));
             textView.setText(content);
             return textView;
         }

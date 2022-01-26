@@ -13,4 +13,6 @@
     <color name="lite_orange2">#EA957B</color>
     <color name="orange_500">#F57C00</color>
     <color name="orange_900">#EF6C00</color>
+    <color name="light_green">#84e184</color>
+    <color name="custom_orange">#fc9d03</color>
 </resources>
